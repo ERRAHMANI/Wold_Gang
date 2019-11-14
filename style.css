@@ -1,0 +1,295 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	
+
+}
+body{
+	background-color: rgba(68,68,68);
+	background-image: url('img/bg_body.svg');
+}
+
+/*************************
+     Header 1
+ *********************/  
+ header{
+ 	background-color: rgba(51,51,51);
+ 	display:flex;
+ 	justify-content: space-around;
+ 	margin-top: 10px;
+
+
+	/*background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 49%, #333333 49%);*/ /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 49%,#333333 49%); /* Chrome10-25,Safari5.1-6 */
+	/*background: linear-gradient(135deg,  rgba(255,255,255,1) 49%,#333333 49%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#771c01',GradientType=2 );*/ /* IE6-9 fallback on horizontal gradient */
+ }
+ header img{
+ 	margin-right: 20%;
+ 	height:70%;
+ 	margin:0 auto;
+
+ }
+nav ul{
+	color:white;
+	font-size: 1em;
+	list-style-type: none;
+
+
+
+	
+}
+header nav ul li{
+	padding-top: 20px;
+	display:block;
+}
+
+header div{
+	/*height: 200px;
+	width:50%;*/
+	/*background-color: white;*/
+}
+span{
+	color:rgba(255,157,0);
+}
+@font-face{
+	font-family: Bodega Sans;
+	src:url('fonts/BodegaSans_Black.ttf');
+}
+h1{
+	font-size:1.6em;
+	font-family:Bodega Sans;
+	color:white;
+	margin: 25px 0;
+	text-align: center;
+}
+
+/**************************
+    section 1
+***********************/
+
+#gang {
+	width:80%;
+	margin:0 auto;
+}
+
+
+
+/**************
+  section2
+**************/
+
+#moto  {
+	display:flex;
+	
+	justify-content: space-between;
+	text-align: center;
+
+}  
+#moto img{
+	width:100%;
+}
+
+p{
+	 font-family: 'Playfair Display', serif;
+}
+
+h2{
+	font-size: 1.2em;
+	/*margin-bottom: 40px;*/
+	color:white;
+	font-family:Bodega Sans;
+	padding: 20px 0;
+}
+/*#moto p{
+	padding-right: 250px;
+}*/
+.un {
+	background-color: white;
+	width:23%;
+	/*display: block;*/
+	padding-bottom: 30px;
+	line-height: 1.6;
+
+}
+#moto a{
+	background-color: rgba(255,157,0);
+	color:white;
+	text-decoration: none;
+	
+	padding:10px 60px;
+}
+h3{
+	color:rgba(255,157,0);
+	
+	
+	font-family:Bodega Sans;
+}
+#ligne{
+	border-top:2px solid rgba(255,157,0);
+	margin: 0 25px;
+}
+
+/***************
+   icone
+****************/
+
+i{
+	color:white;
+	padding-left: 40px;
+}   
+#icone{
+	padding-top:30px;
+}
+
+
+/****************
+   video
+***************/
+video{
+	height: 250px;
+	width:550px;
+	margin-right: 20px;
+}  
+
+#detail .detail-content {
+	display:flex;
+	justify-content: space-between;
+}
+
+#face{
+	width:47%;
+	line-height: 1.4;
+}
+.vd{
+	width:50%;
+}
+
+/*********************
+   footer 
+   ****************/
+
+   footer{
+	
+	padding-top: 10px;
+	font-size: 1em;
+	color:white;
+ }
+  p,h2, nav ul li a{
+ color:rgb(128,128,128)
+ }
+ footer a{
+ 	color:white;
+ }
+/****************
+   Lorem
+ *************/
+ 
+ #lorem{
+ 	display:block;
+ 	text-align: center;
+ 	width:90%;
+ 	margin-left: 50px;
+ }  
+ nav ul li{
+ 	display:inline-grid;
+ 	padding-left:20px;
+ 	
+ }
+ nav ul {
+ 	padding-bottom: 20px;
+ }
+ 
+ 
+
+
+
+ /*******************
+  Media Query
+*******************/
+
+/******Phone*****/
+@media(max-width: 480px)  {
+								header{
+								display:block;
+								}
+								
+								header nav ul li{
+								display:block;
+								margin-left: 50%;
+								
+
+								}
+								#moto {
+								display:block;
+								padding-bottom: 20px;
+								justify-content: space-around;
+								/*text-align: center;*/
+								}
+
+								/*#detail{
+								margin :0 auto;
+								width:80%;
+								}*/
+								.un{
+								width:100%;
+								margin: 0 auto;
+								/*height: 23%*/
+								margin-bottom:30px;
+
+								}
+								#detail .detail-content{
+								/*margin:0 auto;*/
+								display:block;
+								}
+								#icone i{
+								display:block;
+								margin-bottom: 30px;
+								}
+								video{
+								height: 250px;
+								width:300px;
+								margin-right: 10px;
+								}
+								#face{
+								margin: 0 auto;
+								} 
+								#ff {
+									 	margin: 0 5%;
+									 	padding: 50px;
+									 } 
+
+									 /*********
+									   header
+									 **********/
+									header{ 
+									 background: -webkit-linear-gradient(-65deg,  rgba(255,255,255,1) 49%,#333333 49%);  
+									 display:block;}
+
+									 header img{
+									 	height:200;
+									 	width:150px;
+									 	margin-left: 20px
+									 }
+									 body{
+									 	margin:0 auto;
+									 	width:100%;
+									 }
+									 #lorem{
+									 	width:65%;
+									 	line-height: 1.9;
+									 	
+									 }
+									#lorem .a , footer{
+										padding: 0 20%;
+										text-align: center;
+										line-height: 1.9;
+									}
+							}
+
+							/******************
+							    Tablettes
+							*********************/
+							
+							    
